@@ -18,7 +18,7 @@
       padding: 0;
       line-height: 1.6;
       color: #333;
-      background: linear-gradient(to bottom right, #f9e3f8, #fce8c1); /* Rose et champagne */
+      background: linear-gradient(to bottom right, #f9e3f8, #fce8c1);
     }
     nav {
       background-color: #1e293b;
@@ -46,7 +46,7 @@
       margin-right: 6px;
     }
     header {
-      background: linear-gradient(135deg, #f472b6, #fcd34d); /* Rose et champagne */
+      background: linear-gradient(135deg, #f472b6, #fcd34d);
       color: white;
       padding: 4rem 2rem;
       text-align: center;
@@ -89,13 +89,20 @@
       list-style: none;
     }
     .skills-list li {
-      background-color: #f9a8d4; /* Rose pâle */
+      background-color: #f9a8d4;
       padding: 1rem;
       border-radius: 0.75rem;
       text-align: center;
       font-weight: 500;
       color: #1e3a8a;
       box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+    .skills-list li i {
+      margin-right: 6px;
     }
     .project-list {
       display: grid;
@@ -103,7 +110,7 @@
       gap: 2rem;
     }
     .project {
-      background: #fef3c7; /* Champagne */
+      background: #fef3c7;
       padding: 1.5rem;
       border-radius: 0.75rem;
       box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
@@ -120,7 +127,7 @@
       font-size: 1rem;
     }
     button {
-      background-color: #f472b6; /* Rose */
+      background-color: #f472b6;
       color: white;
       padding: 0.75rem;
       font-size: 1rem;
@@ -129,7 +136,7 @@
       cursor: pointer;
     }
     button:hover {
-      background-color: #ec4899; /* Rose foncé */
+      background-color: #ec4899;
     }
     footer {
       text-align: center;
@@ -140,6 +147,7 @@
     footer a {
       color: #fcd34d;
       text-decoration: none;
+      font-weight: 600;
     }
   </style>
 </head>
@@ -169,11 +177,11 @@
   <section id="skills">
     <h2>Mes Compétences</h2>
     <ul class="skills-list">
-      <li>HTML / CSS / JavaScript</li>
-      <li>Python (Tkinter, PyQt, POO)</li>
-      <li>Base de données SQLite</li>
-      <li>Git & GitHub</li>
-      <li>Modélisation UML</li>
+      <li><i class="lucide lucide-layout-template"></i> HTML / CSS / JavaScript</li>
+      <li><i class="lucide lucide-terminal-square"></i> Python (Tkinter, PyQt, POO)</li>
+      <li><i class="lucide lucide-database"></i> Base de données SQLite</li>
+      <li><i class="lucide lucide-git-branch"></i> Git & GitHub</li>
+      <li><i class="lucide lucide-flowchart"></i> Modélisation UML</li>
     </ul>
   </section>
 
@@ -216,19 +224,11 @@
       <button type="submit">Envoyer</button>
     </form>
     <p id="form-message"></p>
-
-    <!-- Contact direct -->
-    <div style="margin-top: 2rem; text-align: center;">
-      <p>
-        📧 Email : <a href="mailto:yacinesall262@gmail.com" style="color: #ec4899;">yacinesall262@gmail.com</a><br />
-        💼 LinkedIn : <a href="www.linkedin.com/in/yacine-sall-88044a361" target="_blank" style="color: #ec4899;">www.linkedin.com/in/yacine-sall-88044a361</a>
-      </p>
-    </div>
   </section>
 
   <footer>
     <p>&copy; 2025 Yacine. Tous droits réservés.</p>
-   
+    <p>📧 Email : <a href="mailto:yacinesall262@gmail.com">yacinesall2004@gmail.com</a> | 💼 LinkedIn : <a href="https://www.linkedin.com/in/yacine-sall-88044a361" target="_blank">Mon profil</a></p>
   </footer>
 
   <script src="script.js"></script>
