@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mon Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <img src="assets/profile.jpg" alt="Photo de profil" class="profile-pic">
+      <h1>Bonjour, je suis Yacine</h1>
+      <p>Développeur passionné par le web et les interfaces modernes.</p>
+    </div>
+  </header>
+
+  <section class="projects">
+    <h2>Mes Projets</h2>
+    <div class="project-list">
+      <div class="project">
+        <h3>Application de gestion de contacts</h3>
+        <p>Une app Python avec interface graphique Tkinter et base SQLite.</p>
+      </div>
+      <div class="project">
+        <h3>Site de fast-food</h3>
+        <p>Projet UML avec gestion de commandes et livraisons.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Contacte-moi</h2>
+    <form id="contactForm">
+      <input type="text" name="name" placeholder="Ton nom" required />
+      <input type="email" name="email" placeholder="Ton email" required />
+      <textarea name="message" placeholder="Ton message..." required></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+    <p id="form-message"></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Yacine. Tous droits réservés.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
